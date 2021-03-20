@@ -8,7 +8,7 @@ import Cards from './cardModel.js';
 const app = express();
 const port = process.env.PORT || 8001;
 const connectionUrl =
-  'mongodb+srv://boss:bossPASS123@tinderclone.fpruw.mongodb.net/tinderdb?retryWrites=true&w=majority';
+  'mongoUri';
 
 // Add Middlewares
 app.use(express.json());
