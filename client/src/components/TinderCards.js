@@ -8,7 +8,9 @@ const TinderCards = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const req = await axios.get('http://localhost:8001/tinder/cards');
+      const req = await axios.get(
+        'https://tinder-swipe.herokuapp.com/tinder/cards'
+      );
 
       setPeople(req.data);
     };
